@@ -12,6 +12,11 @@ class Db_model extends CI_Model {
 		$data=$qy->result_array();
 		return $data;
 	}
+	public function get_dataregister(){
+		$QY=$this->db->query("SELECT * FROM `register`");
+		$data=$QY->result_array();
+		return $data;
+	}
 
 	
 

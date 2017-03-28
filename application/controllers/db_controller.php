@@ -17,6 +17,11 @@ class Db_controller extends CI_Controller {
 		
 		$this->load->view('db_view', $data, FALSE);
 	}
+	public function showregister(){
+		$data['items']=$this->db_model->get_dataregister();
+		$this->load->view('viewregister', $data, FALSE);
+
+	}
 
 }
 
